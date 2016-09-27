@@ -1,0 +1,50 @@
+﻿@model MVC.ViewModels.FornecedorViewModel
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cnpj)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cnpj)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RazaoSocial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RazaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InscricaoMunicipal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InscricaoMunicipal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceitaBruta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceitaBruta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.FornecedorId }) |
+    @Html.ActionLink("Voltar para lista", "Index")
+</p>
